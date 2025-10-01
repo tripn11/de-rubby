@@ -1,0 +1,23 @@
+@use 'variables' as v;
+
+#contact {
+    > div:not(:first-child) {
+        width: 90%;
+        margin: 4rem auto;
+        background-color: whitesmoke;
+        padding: 2rem 1rem;
+        text-align: center;
+
+        ion-icon {
+            font-size: 2rem;
+            color: v.$accent-yellow;
+            border: 1px solid v.$accent-yellow;
+            padding:1rem;
+            border-radius: 50%;
+        }
+
+        h2 {
+            color:v.$accent-purple;
+        }
+    }
+}

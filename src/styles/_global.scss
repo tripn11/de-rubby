@@ -1,0 +1,54 @@
+@use 'variables' as v;
+@use "sass:color";
+
+
+body,html {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: v.$font-primary;
+    color:v.$writeup;
+}
+
+h1,h2,h3 {
+    font-family: v.$font-secondary;
+}
+
+a.special {
+    display: inline-block;
+    margin: 1rem 0 0 1.5rem;
+    padding: 0.5rem 1.5rem;
+    background-color: v.$accent-yellow;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: color.scale(v.$accent-yellow, $lightness: -50%);
+        color: white;
+        border-radius: 10px;
+    }
+}
+
+.banner {
+    background-image: linear-gradient(rgba(v.$accent-purple, 0.5), rgba(v.$accent-purple, 0.5)), url('/images/banner.jpeg');
+    background-repeat: no-repeat;
+    background-position: center 70%; 
+    background-size: cover;
+    height: 25vh;
+    margin-bottom: 4rem;
+    width: 100%;
+
+    h1 {
+      color: white;
+      padding: 2rem 0 0 1rem;  
+    }
+}

@@ -1,0 +1,74 @@
+@use 'variables' as v;
+
+main {
+    section:first-child {
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 2rem 0;
+
+        > div {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+            padding: 0.5rem 1.5rem;
+        }
+    }
+
+    #academics, #about {
+        padding: 1rem 0.5rem;
+        
+        
+        h2 {
+            color: v.$primary-purple;
+            text-align: center;
+        }
+    }
+
+    #academics {
+        >p {
+            text-align: center;
+        }
+
+        >div {
+            > div{
+                padding:0.5rem;
+                background-color: v.$off-white;
+                margin-bottom: 2rem;
+
+                >div:first-child {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.7rem;
+                    color: v.$accent-purple;
+
+                    ion-icon {
+                        font-size: 2rem;
+                        margin-bottom: 0.1rem;
+                        color: v.$accent-yellow;
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: v.$primary-purple;
+                    // font-weight: bold;
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: v.$accent-yellow;
+                    }
+                }
+            }
+        }
+    }
+
+    #about {
+        h2 {
+            text-align: left;
+        }
+
+        p {
+            font-size: 0.95rem;
+        }
+    }
+}
