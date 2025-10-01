@@ -1,6 +1,8 @@
 @use 'variables' as v;
 
 #contact {
+    padding-top: 12vh;
+
     > div:not(:first-child) {
         width: 90%;
         margin: 4rem auto;

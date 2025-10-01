@@ -1,6 +1,7 @@
 @use 'variables' as v;
 
 main {
+    padding-top: 12vh;
     section:first-child {
         height: 50vh;
         background-size: cover;

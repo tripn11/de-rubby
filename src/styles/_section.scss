@@ -1,6 +1,8 @@
 @use 'variables' as v;
 
 .section {
+    padding-top: 12vh;
+
     > div {
         margin: 0 auto;
         font-weight: 400;

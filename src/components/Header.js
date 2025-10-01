@@ -24,12 +24,12 @@ const Header = () => {
             </div>
 
             <label className="container" onClick={()=>navSetter("menu")}>
-                    <input type="checkbox" onClick={(e) => e.stopPropagation()} checked={nav.menu}/>
-                    <div className="checkmark">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                <input type="checkbox" onClick={(e) => e.stopPropagation()} checked={nav.menu}/>
+                <div className="checkmark">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </label>
             
             <nav className={nav.menu ? "open" : ""}>
@@ -41,7 +41,7 @@ const Header = () => {
                         <Link onClick={()=>navSetter("menu")} href="/school/primary">Primary</Link>
                     </div>
                 </div>
-                <div className={pathName === "admission"? "active": ""}>
+                <div className={pathName === "admission" || pathName === "faq" ? "active": ""}>
                     <div onClick={()=>navSetter("admission")}><span>Admission</span> <span>{nav.admission ? "-" : "+"}</span></div>
                     <div className={nav.admission ? "open" : ""}>
                         <Link onClick={()=>navSetter("menu")} href="/admission">Admission</Link>

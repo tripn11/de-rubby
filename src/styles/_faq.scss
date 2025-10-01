@@ -1,5 +1,7 @@
 @use 'variables' as v;
 #faq {
+    padding-top: 12vh;
+
     img {
         height: 70vh;
         object-fit: cover;
@@ -22,19 +24,27 @@
                 color: v.$primary-purple;
                 display: flex;
                 justify-content: space-between;
+                cursor:pointer;
 
                 button {
                     background: none;
                     border: none;
                     color: v.$primary-purple;
                     font-size: 1.2rem;
+                    cursor:pointer;
                 }
             }
 
             p {
                 max-height: 0;
                 overflow: hidden;
-                transition: max-height 0.3s ease;
+                transition: max-height 1s ease;
+            }
+
+            &.active {
+                p {
+                    max-height: 10rem;
+                }
             }
         }
     }

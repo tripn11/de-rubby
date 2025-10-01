@@ -1,12 +1,15 @@
 @use 'variables' as v;
 
 header {
-  height: 10vh;
+  height: 12vh;
   display: flex;
   background-color: v.$off-white;
   justify-content: space-between;
   flex-wrap: wrap;
-  position: relative;;
+  position: fixed;
+  width:100vw;
+  z-index:2;
+
 
   > div {
     display: flex;
@@ -24,7 +27,7 @@ header {
       color: v.$primary-purple;
       font-family: v.$font-primary;
       font-weight: 900;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       margin-left: 0.5rem;
     }
   }
@@ -60,7 +63,7 @@ header {
         color:black;
 
         &.active {
-          color: red;
+          color: v.$accent-yellow;
         }
       }
 
