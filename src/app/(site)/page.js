@@ -48,7 +48,7 @@ const Home = () => {
 			<section id="academics">
 				<h2>Academics</h2>
 				<p>
-					Our academic programs at De-Rubby Mentors School lay the foundation for your child's
+					Our academic programs at De-Rubby Mentors School lay the foundation for your child&apos;s
 					success.
 				</p>
 
