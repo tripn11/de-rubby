@@ -34,14 +34,14 @@ const Header = () => {
             
             <nav className={nav.menu ? "open" : ""}>
                 <Link href="/" className={pathName === ""? "active": ""} onClick={()=>navSetter("menu")}>Home</Link>
-                <div className={pathName === "school"? "active": ""}>
+                <div id="school-tab" className={pathName === "school"? "active": ""}>
                     <div onClick={()=>navSetter("school")}><span>Our School</span> <span>{nav.school ? "-" : "+"}</span></div>
                     <div className={nav.school ? "open" : ""}>
                         <Link onClick={()=>navSetter("menu")} href="/school/nursery">Nursery</Link>
                         <Link onClick={()=>navSetter("menu")} href="/school/primary">Primary</Link>
                     </div>
                 </div>
-                <div className={pathName === "admission" || pathName === "faq" ? "active": ""}>
+                <div id="admission-tab" className={pathName === "admission" || pathName === "faq" ? "active": ""}>
                     <div onClick={()=>navSetter("admission")}><span>Admission</span> <span>{nav.admission ? "-" : "+"}</span></div>
                     <div className={nav.admission ? "open" : ""}>
                         <Link onClick={()=>navSetter("menu")} href="/admission">Admission</Link>

@@ -14,7 +14,7 @@ const Nursery = () => {
             </div>
             <div>
                 <img src="/images/solar.jpeg"/>
-                <p>At CITA Primary School, we ensure uninterrupted learning with our reliable solar inverter and battery system. This clean, safe, and sustainable power supply guarantees 24-hour electricity, creating a comfortable environment where students can study, play, and thrive without disruption. By investing in constant power, we provide not just comfort, but also peace of mind for parents and a dependable atmosphere for academic excellence.</p>
+                <p>At De-Rubby Mentors School, we ensure uninterrupted learning with our reliable solar inverter and battery system. This clean, safe, and sustainable power supply guarantees 24-hour electricity, creating a comfortable environment where students can study, play, and thrive without disruption. By investing in constant power, we provide not just comfort, but also peace of mind for parents and a dependable atmosphere for academic excellence.</p>
                 <h3>24/7 Power for Comfort and Continuous Learning</h3>
             </div>
         </div>

@@ -2,26 +2,54 @@
 
 main {
     padding-top: 12vh;
+
     section:first-child {
-        height: 50vh;
+        min-height: 50vh;
+        max-height: 88vh;
+        height: 50vw;
         background-size: cover;
         background-position: center;
         color: white;
         padding: 2rem 0;
 
+        @media (min-width: 750px) {
+            a {
+                margin-left: 4rem;
+                font-size: 1.5rem;
+            }
+        }
+
         > div {
             background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
             padding: 0.5rem 1.5rem;
+
+            @media (min-width: 750px) {
+                width: 70%;
+                background: none;
+                margin: 0 0 0 2rem;
+            }
+
+            @media (min-width: 750px) {
+                width: 70%;
+                background: none;
+                margin-top: 2rem;
+            }
+
+            h2 {
+                font-size: clamp(1.9rem, 3.65vi + 1.08rem, 4rem);
+            }
         }
+
+        
     }
 
     #academics, #about {
         padding: 1rem 0.5rem;
         
-        
         h2 {
-            color: v.$primary-purple;
+            color: v.$accent-purple;
             text-align: center;
+            font-size: clamp(1.56rem, 0.95vi + 1.35rem, 2.11rem);
         }
     }
 
@@ -52,7 +80,6 @@ main {
                 a {
                     text-decoration: none;
                     color: v.$primary-purple;
-                    // font-weight: bold;
                     transition: color 0.3s ease;
 
                     &:hover {
