@@ -3,11 +3,13 @@ import Link from "next/link";
 const Footer = () => (
     <footer>
         <div>
-            <img src="/logo/apple-touch-icon.png" />
             <div>
-                <p>4, Gani Adebayo Close, Sangotedo Lagos State, Nigeria.</p>
-                <p>+234 803 374 1343</p>
-                <p>+234 812 121 8250</p>
+                <img src="/logo/apple-touch-icon.png" />
+                <div>
+                    <p>4, Gani Adebayo Close, Sangotedo Lagos State, Nigeria.</p>
+                    <p>+234 803 374 1343</p>
+                    <p>+234 812 121 8250</p>
+                </div>
             </div>
 
             <div>

@@ -66,8 +66,10 @@ const Admission = () => {
           <span>Your Message</span>
         </label>
 
-        <Link href = "/" className="submit">Back</Link>
-        <button className="submit" type="submit">Submit</button>
+        <div>
+          <Link href = "/" className="submit">Back</Link>
+          <button className="submit" type="submit">Submit</button>
+        </div>
       </form>
 
       {status === "SUCCESS" && (

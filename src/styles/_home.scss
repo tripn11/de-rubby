@@ -49,6 +49,7 @@ main {
         h2 {
             color: v.$accent-purple;
             text-align: center;
+            font-weight: bold;
             font-size: clamp(1.56rem, 0.95vi + 1.35rem, 2.11rem);
         }
     }
@@ -56,9 +57,22 @@ main {
     #academics {
         >p {
             text-align: center;
+            width: 40%;
+            margin: 0 auto 2rem auto;
         }
 
         >div {
+            @media (min-width: 650px) {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            @media (min-width:1000px) {
+                display: flex;
+                width: 40rem;
+                gap: 5rem;
+            }
+
             > div{
                 padding:0.5rem;
                 background-color: v.$off-white;
@@ -91,12 +105,25 @@ main {
     }
 
     #about {
+        @media (min-width: 650px) {
+            width:90%;
+            margin: 0 auto;
+        }
+
+        
+
         h2 {
             text-align: left;
         }
 
         p {
             font-size: 0.95rem;
+
+            @media (min-width:1000px) {
+                width: 80%;
+                font-size: 1.1rem;
+            }
+        
         }
     }
 }

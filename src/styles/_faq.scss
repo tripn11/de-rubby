@@ -3,12 +3,24 @@
     padding-top: 12vh;
 
     img {
-        height: 70vh;
+        min-height: 70vh;
         object-fit: cover;
+        width:70%;
+        display: block;
+        margin: 0 auto;
+
+        @media(min-width:500px) {
+            width: 50%;
+        }
     }
 
     section {
         padding: 1rem;
+
+        @media (min-width:500px) {
+            width:80%;
+            margin:0 auto;
+        }
 
         h2 {
             color: v.$accent-purple;
@@ -46,6 +58,26 @@
                     max-height: 10rem;
                 }
             }
+        }
+    }
+
+    @media (min-width:1000px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 90%;
+        
+        .banner {
+            width:100%;
+        }
+
+        >*:not(.banner) {
+            width: 50%;
+        }
+
+        img {
+            object-fit: contain;
+            width: 100%;
         }
     }
 }

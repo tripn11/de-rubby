@@ -3,6 +3,23 @@
 .section {
     padding-top: 12vh;
 
+    @media (min-width:1000px) {
+        display: flex;
+        flex-wrap: wrap;
+
+        >div:first-child.banner {
+            width: 100%;
+        }
+
+        >:not(:first-child.banner) {
+            flex-basis: 30%;
+        }
+
+        >div img{
+            height: 10rem;
+        }
+    }
+
     > div {
         margin: 0 auto;
         font-weight: 400;
@@ -12,12 +29,20 @@
         padding: 1rem 0;
         width: 95%;
 
+        @media (min-width: 800px) {
+            width:80%;
+        }
+
         img {
             width: 95%;
             height: 15rem;
             object-fit: cover;
             display: block;
             margin: 0 auto;
+
+            @media (min-width:600px) and (max-width: 999px)  {
+                height: 20rem;
+            }
         }
 
         p {

@@ -67,6 +67,10 @@ header {
     width: 60vw;
     background-color: v.$off-white;
 
+    > *.active {
+      color: v.$accent-yellow;
+    }
+
     @media (min-width:1000px) {
       position: static;
       flex-direction: row;
@@ -132,6 +136,7 @@ header {
     }
 
     &.open {
+      @media (max-width:1000px) {
       max-height: 50vh;
       opacity: 1;
 
@@ -148,9 +153,7 @@ header {
           padding:0.7rem 1rem;
         }
 
-        &.active {
-          color: v.$accent-yellow;
-        }
+
       }
 
       > div {
@@ -184,7 +187,7 @@ header {
           }
         }
       }
-    }
+    }}
   }
 }
 
